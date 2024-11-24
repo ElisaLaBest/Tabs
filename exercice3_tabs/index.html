@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabs Simple</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="tabs">
+    <ul class="tab-list">
+      <li class="tab tab-active" onclick="showTab('accueil')">Accueil</li>
+      <li class="tab" onclick="showTab('cartes')">Cartes</li>
+      <li class="tab" onclick="showTab('inscription')">Inscription</li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="content accueil active">
+        <h2>Bienvenue sur la page d'accueil</h2>
+        <p>Voici le contenu de la section accueil.</p>
+      </div>
+      <div class="content cartes">
+        <h2>Cartes disponibles</h2>
+        <p>Voici les cartes que nous proposons.</p>
+      </div>
+      <div class="content inscription">
+        <h2>Inscription</h2>
+        <p>Formulaire d'inscription.</p>
+      </div>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

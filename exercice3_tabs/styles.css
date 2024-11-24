@@ -1,0 +1,38 @@
+/* Style général pour les onglets */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.tab-list {
+  display: flex;
+  list-style: none;
+  padding:0px;
+  margin:0px;
+}
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  text-align: center;
+  background-color: rgb(247, 209, 209);
+  border: 10px solid white;
+  transition: background-color 0.3s;
+}
+.tab-active {
+  background-color: rgb(230, 124, 121);
+  color: white;
+}
+/* Style pour le contenu */
+.tab-content {
+  padding: 20px;
+  border-top: 1px solid white;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}
+h2 {
+  margin-top: 0;
+}
